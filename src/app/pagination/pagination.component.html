@@ -1,0 +1,13 @@
+<div *ngIf="paginationConfig" class="pagination">
+  <button class="pagination__previous-page"
+          [disabled]="!paginationConfig.prevPage"
+          (click)="onPageChange(paginationConfig.prevPage)"
+  >Previous
+  </button>
+  <div class="pagination__current-page">{{paginationConfig.page}}</div>
+  <button class="pagination__next-page"
+          [disabled]="!paginationConfig.nextPage"
+          (click)="onPageChange(paginationConfig.nextPage)"
+  >Next
+  </button>
+</div>

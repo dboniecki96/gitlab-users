@@ -1,0 +1,19 @@
+.filter-container {
+  width: 30%;
+  padding: 20px;
+  margin: 0 auto;
+
+  label {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  input {
+    height: 20px;
+  }
+}

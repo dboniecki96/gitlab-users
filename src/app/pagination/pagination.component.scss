@@ -1,0 +1,31 @@
+.pagination {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+
+  &__previous-page, &__next-page {
+    height: 100%;
+    width: 100px;
+    padding: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #c0e9ee;
+
+    &:disabled {
+      cursor: default;
+    }
+
+    &:hover {
+      background-color: cadetblue;
+    }
+  }
+
+  &__current-page {
+    height: 100%;
+    width: 50px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+}
